@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans:400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration System</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header bg-warning">
+        <div class="d-flex container">
+            <div class="logo">
+                <a href="login.html"><i class="fas fa-coins"><span class="pl-3">MoneyMonitoring</span></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- main -->
+    <section class="wrapper bg-dark d-flex align-items-center">
+        <div class="container text-warning">
+            <div class="alert alert-warning text-center" role="alert">
+                <h4 class="alert-heading">Enter your correct data and log in to your personal account!</h4>
+                <p class="pt-3">This system is designed to monitor exchange rates.</p>
+            </div>
+            <form id="reg-form">
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold">First and last name</span>
+                        </div>
+                        <input type="text" required name="firstName" aria-label="First name" class="form-control" placeholder="Enter your first-name">
+                        <input type="text" required name="lastName" aria-label="Last name" class="form-control" placeholder="Enter your last-name">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text font-weight-bold" id="basic-addon1">Username: </span>
+                        </div>
+                        <input type="text" required name="userName" class="form-control" placeholder="Enter your username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text font-weight-bold" id="basic-addon3">Password: </span>
+                        </div>
+                        <input type="password" required name="password" class="form-control" placeholder="Enter your password" aria-label="Password" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="form-check mb-3">
+                        <input name='isVip' type="checkbox" class="form-check-input check-user" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Create Vip-Account
+                        </label>
+                    </div>
+                    <div class="input-group mb-3 hidden" id="emailInput">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bold" id="basic-addon4">E-mail: </span>
+                        </div>
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email" aria-label="Password" aria-describedby="basic-addon3">
+                    </div>
+                    <button type="submit" class="font-weight-bold btn btn-warning btn-block mb-3 text-uppercase">Register</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- end main -->
+    
+    <!-- footer -->
+    <footer class="footer bg-warning text-left">
+        <div class="container">
+            <div class="about d-flex align-items-center">
+                <i class="fas fa-user-cog">:<span class="font-weight-bold pl-1">Pakharuk Vadim</span></i>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/pagesJs/registerPage.js"></script>
+</html>

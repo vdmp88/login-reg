@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans:400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration System</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header bg-warning">
+        <div class="d-flex justify-content-between container align-items-center">
+            <div class="logo">
+                <a href="login.html"><i class="fas fa-coins"><span class="pl-3">MoneyMonitoring</span></i></a>
+            </div>
+            <button id="logout" class="btn btn-danger">Log out</button>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- main -->
+    <section class="wrapper bg-dark d-flex align-items-center">
+        <div class="container text-warning">
+            <div class="card d-flex text-warning bg-secondary mt-5 text-center mb-3" style="max-width: 100%;">
+                <div class="card-header">
+                    <h4>Login was successful!</h4>
+                    <p class="pt-3">Welcome: <span id="userName"></span></p>
+                    <p class="pt-3">You are logged in as: <span id="userStatus"></span></p>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mb-0 date text-center"></h5>
+                </div>
+            </div>
+            <div class="text-center">
+                <div id="currency" class="pt-3">
+                    <div class="fisrtTitle p-2 text-danger"></div>
+                    <ul id='ul'></ul>
+                    <div class="secondTitle p-2 text-danger"></div>
+                    <ul id='ulTwo'></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main -->
+    
+    <!-- footer -->
+    <footer class="footer bg-warning text-left">
+        <div class="container">
+            <div class="about d-flex align-items-center">
+                <i class="fas fa-user-cog">:<span class="font-weight-bold pl-1">Pakharuk Vadim</span></i>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/pagesJs/indexPage.js"></script>
+</html>
