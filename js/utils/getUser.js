@@ -6,6 +6,7 @@ export const getUser = () => {
 
 export const getCurrencyUser = () => {
   const url = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json";
+  const user = getUser();
   const data = fetch(url)
     .then(response => response.json())
     .then(response => {
@@ -22,6 +23,29 @@ export const getCurrencyUser = () => {
         </li>`;
         list.insertAdjacentHTML('beforeend', li);
       });
+      if(user.isVip) {
+        let li = list.querySelectorAll('.item');
+        let search = document.querySelector('#search');
+        let text;
+        search.style.display = 'block';
+        
+        search.addEventListener('keyup', () => sort());
+        
+        
+        
+
+
+        function sort() {
+          for (let i = 0; i < li.length; i++) {
+            text = li[i].textContent || li[i].innerText;
+            if (text.toUpperCase().indexOf(search.value.toUpperCase()) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+      }
     })
   return data;
 } 
@@ -29,7 +53,7 @@ export const getCurrencyUser = () => {
 
 export const getCurrencyVip = () => {
   const url = "https://bank.gov.ua/NBUStatService/v1/statdirectory/banksincexp?date=20090201&period=m&json";
-  const user = getUser()
+  const user = getUser();
   const data = fetch(url)
     .then(response => response.json())
     .then(response => {

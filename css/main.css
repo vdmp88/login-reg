@@ -195,8 +195,8 @@ body {
   font-size: 25px;
 }
 
-.error-msg {
-
+#search {
+  display: none;
 }
 
 /*
