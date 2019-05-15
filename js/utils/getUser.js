@@ -28,8 +28,10 @@ export const getCurrencyUser = () => {
         let search = document.querySelector('#search');
         let text;
         let searchGroup = document.querySelector('.search-input');
-        searchGroup.style.display = 'block';
+        searchGroup.style.display = 'flex';
         
+        console.log(searchGroup);
+
         search.addEventListener('keyup', () => sort());
         
         
