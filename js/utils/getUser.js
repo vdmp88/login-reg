@@ -27,7 +27,8 @@ export const getCurrencyUser = () => {
         let li = list.querySelectorAll('.item');
         let search = document.querySelector('#search');
         let text;
-        search.style.display = 'block';
+        let searchGroup = document.querySelector('.search-input');
+        searchGroup.style.display = 'block';
         
         search.addEventListener('keyup', () => sort());
         

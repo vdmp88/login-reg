@@ -195,7 +195,7 @@ body {
   font-size: 25px;
 }
 
-#search {
+.search-input {
   display: none;
 }
 
